@@ -1,13 +1,32 @@
 #include <iostream>
 
-// Lab 5 — Your Name
+// Lab 5 — Tristan Daliva
 // CIS 5 Week 05 · Eligibility check
+
+using std::cout;
+using std::cin;
 
 int main() {
   int age = 0;
   double gpa = 0.0;
 
-  // TODO: cout question, then cin, for age and for gpa
+  cout << "What is your current age? ";
+  cin >> age;
+
+  cout << "What is your current GPA? ";
+  cin >> gpa;
+
+  bool adult = age >= 18;
+  bool honors = gpa >= 3.5;
+
+  if (adult && honors) cout << "You are actually eligible for honors! \n";
+
+  else if (adult || honors) cout << "you ALMOST did it!";
+
+  else cout << "You meet no requirements!";
+ 
+ 
+  // TODO: cout question, then cin, for age and for gpa done
 
   // Thresholds: adult at 18, honors at 3.5 (change these and say why in a comment)
   // TODO: bool adult = ...;
