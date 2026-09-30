@@ -19,11 +19,11 @@ int main() {
   bool adult = age >= 18;
   bool honors = gpa >= 3.5;
 
-  if (adult && honors) cout << "You are actually eligible for honors! \n";
+  if (adult && honors) cout << "You are eligible for the honors program! \n";
 
-  else if (adult || honors) cout << "you ALMOST did it!";
+  else if (adult || honors) cout << "You only meet one of the requirements for the honors program, sorry! \n";
 
-  else cout << "You meet no requirements!";
+  else cout << "You meet no requirements for the honors program!";
  
  
   // TODO: cout question, then cin, for age and for gpa done
